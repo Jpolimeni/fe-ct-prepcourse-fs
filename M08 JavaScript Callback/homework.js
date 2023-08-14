@@ -63,12 +63,7 @@ function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-   let letraA = [];
-   for (const elemento of arrayOfStrings){
-      if (elemento[0] === 'a'){
-         letraA.push(elemento);
-      }
-   }
+   let letraA = arrayOfStrings.filter((elemento)=> elemento[0] === 'a')
    return (letraA)
 }
 
